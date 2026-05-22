@@ -5,46 +5,116 @@
 }
 
 body {
-    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #061E29;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
     text-align: center;
     font-size: 45px;
-    margin-right: 20%;
     color: orange;
     padding: 30px;
 }
 
-#he {
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+    padding: 15px;
+}
+
+p {
     text-align: center;
     font-size: 18px;
-    margin-right: 20%;
     color: white;
     padding: 25px;
+    line-height: 1.6;
+    margin: 0;
 }
 
 #programmist {
-    max-width: 60%;
-    max-height: 60%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
     padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tests {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
 }
 
 .tab {
-    width: 300px;
-    height: 250px;
-    background-color: black;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    background-color: #1D546D;
     color: orange;
     text-align: center;
-    line-height: 60px;
     font-size: 20px;
     border-radius: 10px;
-}
-#but{
     display: flex;
     flex-direction: column;
-    height: 10%;
     padding: 20px;
-    align-self: center;
-    background-color: ;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+    background-color: #256b85;
+}
+
+.but {
+    width: 160px;
+    height:  80px;
+    color: white;
+    padding: 0;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.new {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #5F9598;
+    color: #F3F4F4;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.new:hover {
+    background: #85C79A;
+}
+
+footer {
+    background-color: #091413;
+    color: #8899a6;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #1D546D;
+}
+
+.quiz {
+    
 }

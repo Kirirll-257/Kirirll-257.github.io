@@ -7,49 +7,90 @@
     <title>Викторина по Web-разработке</title>
     <link rel="icon" href="images/image-1.jpg" type="image/x.icon">
     <link rel="stylesheet" href="style.css">
+    <script src="dek.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Викторина по WEB-разработке</h1>
+        <h1 id="king">Викторина по WEB-разработке</h1>
+        <p>Добро пожаловать на данный сайт!</p>
+        <p>WEB‑разработка — это не просто код, это искусство. Но признайся честно: ты действительно понимаешь, как
+            оно работает, или просто копируешь куски кода из Stack Overflow?
+            Наша викторина создана, чтобы проверить твои знания на прочность. Никаких поблажек: только честные
+            вопросы, интересные нюансы и пара сюрпризов, которые заставят задуматься даже тех, кто «всё знает».
+            Короткие сессии, понятные объяснения и никакого занудства — только практика, которая покажет, кто тут
+            настоящий профи, а кто — начинающий волшебник в мире кода.
+            Прими вызов: пройди тест и узнай, насколько ты близок к званию «Мастер WEB‑разработки». Или боишься
+            узнать правду?.</p>
+        <img id="programmist"
+            src="https://248006.selcdn.ru/main/iblock/788/7885f0e7c3578a2720acedbb0f6cf29c/302a9e1276de75954625a74cc1b8abc9.jpg"
+            alt="Здесь фотография Вас!">
     </header>
     <main>
-        <div id="he">
-            <p>Добро пожаловать на данный сайт!</p>
-            <p>WEB‑разработка — это не просто код, это искусство. Но признайся честно: ты действительно понимаешь, как
-                оно работает, или просто копируешь куски кода из Stack Overflow?
-                Наша викторина создана, чтобы проверить твои знания на прочность. Никаких поблажек: только честные
-                вопросы, интересные нюансы и пара сюрпризов, которые заставят задуматься даже тех, кто «всё знает».
-                Короткие сессии, понятные объяснения и никакого занудства — только практика, которая покажет, кто тут
-                настоящий профи, а кто — начинающий волшебник в мире кода.
-                Прими вызов: пройди тест и узнай, насколько ты близок к званию «Мастер WEB‑разработки». Или боишься
-                узнать правду?.</p>
-            <img id="programmist"
-                src="https://248006.selcdn.ru/main/iblock/788/7885f0e7c3578a2720acedbb0f6cf29c/302a9e1276de75954625a74cc1b8abc9.jpg"
-                alt="Здесь фотография Вас!">
-            <p>Ниже находятся тесты по WEB-разработке, которые вы можете пройти.</p>
-        </div>
-        <div class="tests">
+        <h2>Тестирование онлайн</h2>
+        <p>Каждый тест содержит 20 вопросов, вы получаете баллы за каждый правильный ответ, в конце каждого теста
+            вы получаете своё общее число баллов.
+            Когда вы закончите тест, вы можете просмотреть каждый вопрос с правильным ответом.</p>
+        <div class="tests" id="tests-container">
             <div class="html">
                 <div class="tab">
-                    <div id="texts">
-                        <p> Тест по HTML</p>
+                    <div class="texts">Тест по HTML</div>
+                    <p>Уровень: Семантический ниндзя. Награда: Доступный сайт.</p>
+                    <div class="but">
+                        <a href="./html-тест/index.json" class="new" data-topic="html">Начать тест</a>
                     </div>
-                        <button id="but"><a href="./html-тест/index.html">Начать тест</a></button>
                 </div>
             </div>
             <div class="css">
-
+                <div class="tab">
+                    <div class="texts">Тест по CSS</div>
+                    <p>Уровень: Пиксельный перфекционист. Награда: Красивый сайт.</p>
+                    <div class="but">
+                        <a href="./css-тест/index.json" class="new" data-topic="css">Начать тест</a>
+                    </div>
+                </div>
             </div>
             <div class="js">
-
+                <div class="tab">
+                    <div class="texts">Тест по JavaScript</div>
+                    <p>Уровень: Повелитель асинхронности. Награда: Работающий код (или нет).</p>
+                    <div class="but">
+                        <a href="./js-тест/index.json" class="new" data-topic="js">Начать тест</a>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz" class="quiz hidden">
+                <div class="quiz-head">
+                    <h2 id="qtitle">Тест</h2>
+                    <div class="progress">
+                        <div id="progress"></div>
+                    </div>
+                    <span id="quiz-count">0 / 0</span>
+                </div>
+                <div class="quiz-main">
+                    <h3 id="quiz-text">Загрузка вопроса...</h3>
+                    <div id="options" class="options"></div>
+                </div>
+                <div id="quiz-result" class="hidden">
+                    <h2>Поздравляю, тест завершён!</h2>
+                    <p id="result-text"></p>
+                    <button class="new" id="restart">Пройти заново?</button>
+                    <button class="new sec" id="back">На главную</button>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-
+        <div class="foot">
+            <div id="univer">&copy;2026 Все права защищены.</div>
+            <div id="contancts">
+                <a href="#king">На главную</a>
+                <a href="">Контакты</a>
+                <a href="https://github.com/Kirirll-257/Kirirll-257.github.io">Ссылка на GitHub</a>
+                <a href="">О нас</a>
+            </div>
+        </div>
     </footer>
-    <script src="dek.js"></script>
 </body>
 
 </html>
