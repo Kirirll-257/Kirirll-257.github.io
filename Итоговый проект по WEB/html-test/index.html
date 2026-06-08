@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по Web-разработке</title>
+    <link rel="icon" href="../images/image-1.jpg" type="image/x.icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/quiz.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="tema" href="rules.html">Правила<br>викторины</a>
+            <a class="tema" href="result.html">Результаты</a>
+            <button class="tema" id="theme-s">Тема</button>
+        </nav>
+    </header>
+    <main>
+        <h1 id="king">Викторина по WEB-разработке</h1>
+        <p>Добро пожаловать на данный сайт!</p>
+        <p class="intro">WEB‑разработка — это не просто код, это искусство. Но признайся честно: ты действительно
+            понимаешь, как
+            оно работает, или просто копируешь куски кода из Stack Overflow?
+            Наша викторина создана, чтобы проверить твои знания на прочность. Никаких поблажек: только честные
+            вопросы, интересные нюансы и пара сюрпризов, которые заставят задуматься даже тех, кто «всё знает».
+            Короткие сессии, понятные объяснения и никакого занудства — только практика, которая покажет, кто тут
+            настоящий профи, а кто — начинающий волшебник в мире кода.
+            Прими вызов: пройди тест и узнай, насколько ты близок к званию «Мастер WEB‑разработки». Или боишься
+            узнать правду?.</p>
+        <img id="programmist"
+            src="https://248006.selcdn.ru/main/iblock/788/7885f0e7c3578a2720acedbb0f6cf29c/302a9e1276de75954625a74cc1b8abc9.jpg"
+            alt="Здесь находится фотография Вас!">
+        <h2>Тестирование онлайн</h2>
+        <p>Прежде чем проходить тесты, изучите правила по ссылке - <a id="ruless" href="rules.html">Правила викторины</a>.</p>
+        <div class="tests" id="tests-container">
+            <div class="html">
+                <div class="tab">
+                    <div class="texts">Тест по HTML</div>
+                    <p>Уровень: Семантический ниндзя. Награда: Доступный сайт.</p>
+                    <div class="but">
+                        <button class="new" data-category="html" data-level="beginner">Базовый</button>
+                        <button class="new" data-category="html" data-level="professional">Продвинутый</button>
+                    </div>
+                </div>
+            </div>
+            <div class="css">
+                <div class="tab">
+                    <div class="texts">Тест по CSS</div>
+                    <p>Уровень: Пиксельный перфекционист. Награда: Красивый сайт.</p>
+                    <div class="but">
+                        <button class="new" data-category="css" data-level="beginner">Базовый</button>
+                        <button class="new" data-category="css" data-level="professional">Продвинутый</button>
+                    </div>
+                </div>
+            </div>
+            <div class="js">
+                <div class="tab">
+                    <div class="texts">Тест по JavaScript</div>
+                    <p>Уровень: Повелитель асинхронности. Награда: Работающий код (или нет).</p>
+                    <div class="but">
+                        <button class="new" data-category="javascript" data-level="beginner">Базовый</button>
+                        <button class="new" data-category="javascript" data-level="professional">Продвинутый</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="quiz" class="quiz_hidden"></div>
+    <footer>
+        <div class="foot">
+            <div id="univer">&copy;2026 Все права защищены.</div>
+            <div id="contancts">
+                <a href="#king">На главную</a>
+                <a href="rules.html">Правила викторины</a>
+                <a href="result.html">Результаты</a>
+                <a href="https://github.com/Kirirll-257/Kirirll-257.github.io">Ссылка на GitHub</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/dek.js"></script>
+</body>
+
+</html>
