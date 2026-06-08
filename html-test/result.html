@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты викторины</title>
+    <link rel="icon" href="/images/image-1.jpg" type="image/x.icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/result.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="tema" href="index.html">На главную</a>
+            <a class="tema" href="rules.html">Правила<br>викторины</a>
+            <button class="tema" id="theme-s">Тема</button>
+        </nav>
+    </header>
+    <main class="menu">
+        <h1 id="settings">Таблица лидеров</h1>
+        <section class="result">
+            <h2 class="stats">Моя статистика</h2>
+            <div class="stats_cards">
+                <div class="stat-card">
+                    <span class="stat-card_label">Игр пройдено: </span>
+                    <span class="stat-card_val" id="games-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card_label">Средний балл: </span>
+                    <span class="stat-card_val" id="avg-score">0%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card_label">Лучший результат: </span>
+                    <span class="stat-card_val" id="best-score">0</span>
+                </div>
+            </div>
+        </section>
+        <section class="leader">
+            <h2 class="leaders">Таблица прохождений</h2>
+            <table class="board-leaders">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Количество очков</th>
+                        <th>Проценты</th>
+                        <th>Категория</th>
+                    </tr>
+                </thead>
+                <tbody id="leader-board"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="foot">
+        <p class="univer">&copy;2026 Все права защищены.</p>
+        <div class="contancts">
+            <a href="index.html">На главную</a>
+            <a href="rules.html">Правила викторины</a>
+            <a href="#settings">Результаты</a>
+            <a href="https://github.com/Kirirll-257/Kirirll-257.github.io">Ссылка на GitHub</a>
+        </div>
+    </footer>
+    <script src="/js/result.js"></script>
+</body>
+
+</html>
