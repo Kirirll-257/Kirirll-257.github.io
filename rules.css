@@ -1,0 +1,58 @@
+.rules,
+.rules1 {
+    max-width: 800px;
+    min-height: 140px;
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    text-align: left;
+    font-size: 18px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 50px;
+    margin-left: 210px;
+}
+
+@media (max-width: 768px) {
+
+    .rules,
+    .rules1 {
+        max-width: 100%;
+        margin: 30px 20px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .recommendations {
+        padding: 15px;
+    }
+
+    .recommendations li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .rules,
+    .rules1 {
+        margin: 20px 10px;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .recommendations {
+        padding: 10px;
+    }
+
+    .recommendations li {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
